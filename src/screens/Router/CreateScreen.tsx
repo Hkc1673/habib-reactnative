@@ -100,7 +100,9 @@ const CreateScreen = ({ navigation }: NativeStackScreenProps<RootStackParamList>
                 {`Selected Category: ${selectedCategory}`}
             </Text>
             <FlatList
-                style={{ marginVertical: 10 }}
+                style={{ 
+                    marginVertical: 10,
+                }}
                 data={categories}
                 renderItem={({ item }) => (
                     <Categories
@@ -113,7 +115,7 @@ const CreateScreen = ({ navigation }: NativeStackScreenProps<RootStackParamList>
                 showsHorizontalScrollIndicator={false}
             />
             <AddButton
-                title="+"
+                title="Add"
                 onPress={() => onCreate()}
             />
             {loading && <Loading />}
@@ -126,6 +128,8 @@ const styles = StyleSheet.create({
         height: 40,
         margin: 12,
         borderWidth: 1,
+        borderColor: "#2B7DE9",
+        borderRadius: 5,
         padding: 10,
     },
     text: {

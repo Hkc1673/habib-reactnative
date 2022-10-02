@@ -39,7 +39,6 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     title: {
-        fontFamily: "Roboto",
         fontSize: 18,
         fontWeight: "900",
         textAlign: "left",
@@ -48,18 +47,16 @@ const styles = StyleSheet.create({
         letterSpacing: 1,
     },
     price: {
-        fontFamily: "Roboto",
         fontSize: 16,
         textAlign: "left",
         paddingBottom: 10,
         paddingLeft: 10,
     },
     detail: {
-        fontFamily: "Roboto",
         fontSize: 16,
         textAlign: "justify",
         padding: 10,
-        color: "blue",
+        color: "#3f4957",
         letterSpacing: 1,
     },
 });

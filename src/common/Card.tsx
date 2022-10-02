@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         shadowRadius: 2,
         marginHorizontal: 4,
         marginVertical: 6,
-        height: deviceHeight * 0.4,
+        height: deviceHeight * 0.3,
     },
     image: {
         height: 150,
@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
         margin: 10,
     },
     title: {
-        fontFamily: "Roboto",
         fontSize: 18,
         fontWeight: "bold",
         textAlign: "left",
@@ -49,7 +48,6 @@ const styles = StyleSheet.create({
         paddingLeft: 10,
     },
     price: {
-        fontFamily: "Roboto",
         fontSize: 16,
         textAlign: "left",
         paddingBottom: 10,

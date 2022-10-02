@@ -19,22 +19,21 @@ export default AddButton
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
-        bottom: 20,
-        right: 20,
-        backgroundColor: '#fff',
+        bottom: 40,
+        right: 40,
+        backgroundColor: "#699a00",
         borderRadius: 50,
-        borderColor: '#000',
-        borderWidth: 1,
-        width: 50,
-        height: 50,
+        width: 60,
+        height: 60,
         justifyContent: 'center',
         alignItems: 'center',
         elevation: 99,
         zIndex: 99
     },
     text: {
-        fontSize: 30,
+        fontSize: 24,
         fontWeight: 'bold',
+        color: '#fff'
     },
 })
 

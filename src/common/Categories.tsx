@@ -8,8 +8,7 @@ interface Props {
 
 const Categories = ({ title, onPress }:Props) => {
     return (
-        <TouchableOpacity onPress={onPress}
-        >
+        <TouchableOpacity onPress={onPress}>
             <View style={styles.card}>
                 <Text style={styles.title}>{title}</Text>
             </View>
@@ -34,12 +33,12 @@ const styles = StyleSheet.create({
         alignItems: "center",
     },
     title: {
-        fontFamily: "Roboto",
         fontSize: 18,
         fontWeight: "bold",
         textAlign: "center",
         paddingVertical: 10,
         paddingLeft: 10,
+        color: "#2B7DE9"
     },
 });
 
