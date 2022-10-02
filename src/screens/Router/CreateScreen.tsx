@@ -37,7 +37,6 @@ const CreateScreen = ({ navigation }: NativeStackScreenProps<RootStackParamList>
         }
         const action = await dispatch(createProducts(product))
         if (createProducts.fulfilled.match(action)) {
-            console.log("action", action.payload)
             Alert.alert(
                 "Success",
                 action?.payload?.message,
@@ -58,7 +57,6 @@ const CreateScreen = ({ navigation }: NativeStackScreenProps<RootStackParamList>
                     { text: "Ok", onPress: () => { }, }
                 ]
             );
-            console.log("action", action.payload)
         }
     }, [name, price, description, image, email, selectedCategory, dispatch, navigation]);
     return (

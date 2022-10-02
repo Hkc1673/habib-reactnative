@@ -22,8 +22,6 @@ const ProductScreen = ({ navigation }: Props) => {
         dispatch(fetchProducts())
         dispatch(fetchCategories())
     }, [])
-    console.log("products", products)
-    console.log("categories", categories)
 
     useEffect(() => {
         setData(products)
@@ -34,7 +32,6 @@ const ProductScreen = ({ navigation }: Props) => {
     }, [categories])
 
     const goToDetail = (product: any) => {
-        console.log("product", product)
         navigation.navigate('ProductDetail', { product })
     }
 
@@ -48,7 +45,6 @@ const ProductScreen = ({ navigation }: Props) => {
         }
 
     }
-    console.log("data", data)
     return (
         <View
             style={{ flex: 1 }}
